@@ -16,7 +16,7 @@
     
 }
 
-.top,.bottom {
+.top {
     background-color: white;
     padding: 0 150px;
     min-height: 160px;
@@ -41,3 +41,43 @@
     border-radius: 5px;
     width: 60px;
 }
+
+.data{
+    
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid black;
+    min-height: 100px;
+}
+
+
+    
+.bottom{
+    padding: 20px;
+    min-height: 160px;
+    width: 60em;
+    background-color: white;
+    margin: 2em auto;
+    color: black;
+    text-align: left;
+}
+
+.passenger{
+    background-color: lightgray;
+    padding: 10px;
+    
+}
+
+.details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+
+.active{
+    display: none;
+}
+
+   

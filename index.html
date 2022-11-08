@@ -14,7 +14,7 @@
     <section class="full-ticket">
 
         <!-- TITOLO -->
-      <h1 id="ticket">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <h1 >CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <!-- form -->
       <div class="top">
         
@@ -33,17 +33,45 @@
       </div>
 
           <!-- output biglietto -->
-
+      
       <h1> IL TUO BIGLIETTO</h1>
 
-      <div class="bottom"></div>
+      <div id="bot-act" class="bottom active">
+        <h3>DETTAGLI PASSEGGERO</h3>
+        <section  class="data"> 
+
+          <div class="passenger">
+            <h3>NOME PASSEGGERO</h3>
+            <span id="passenger-name" >Jon Snow</span>
+          </div>
+
+          <div class="details">
+            <h3>Offerta</h3>
+            <span>Biglietto standard</span>
+          </div>
+
+          <div class="details">
+            <h3>Carrozza</h3>
+            <span>5</span>
+          </div>
+
+          <div class="details">
+            <h3>Codice CP</h3>
+            <span>92911</span>
+          </div>
+
+          <div class="details">
+            <h3>Costo biglietto</h3>
+            <span id="ticket">?</span>
+          </div>
+            
+        </section>
+      </div>
     </section>
   </main>
 
     
-    <input id="age" type="text" placeholder="inserisci l'età">
-    <input id="distance" type="text" placeholder="quanti chilometri?">
-    <button class="MyButton" placeholder="inserisci i chilometri"> genera</button>
+   
   
     <script type="text/javascript" src="main.js"></script>
 </body>

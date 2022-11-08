@@ -17,7 +17,7 @@ const myButton = document.querySelector("button");
 myButton.addEventListener("click",
 
     function () {
-
+        const name = document.getElementById ("name").value;
         const age = document.getElementById ("age").value;
         const distance = document.getElementById("distance").value;
         let price = distance * 0.21;
@@ -26,21 +26,28 @@ myButton.addEventListener("click",
         if (age < 18) {
             
             totPrice = price - (price * 0.2);
-            totPrice = totPrice.toFixed(2);
-            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice.toFixed(2) + "€" ;
+            document.getElementById("ticket").innerHTML=  totPrice.toFixed(2) + "€" ;
+            let element = document.getElementById("bot-act");
+            element.classList.remove("active");
+            document.getElementById("passenger-name").innerHTML= name;
+            
         }
 
         else if (age > 64) {
         
             totPrice = price - (price * 0.4); 
-            
-            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice.toFixed(2) + "€" ;
+            document.getElementById("ticket").innerHTML=  totPrice.toFixed(2) + "€" ;
+            let element = document.getElementById("bot-act");
+            element.classList.remove("active");
+            document.getElementById("passenger-name").innerHTML= name;
         }
 
         else {
             totPrice = price;
-            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice.toFixed(2) + "€" ;
-
+            document.getElementById("ticket").innerHTML=  totPrice.toFixed(2) + "€" ;
+            let element = document.getElementById("bot-act");
+            element.classList.remove("active");
+            document.getElementById("passenger-name").innerHTML= name;
         }
 
     }
