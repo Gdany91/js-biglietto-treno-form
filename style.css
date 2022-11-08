@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.full-ticket{
+    text-align: center;
+    background-color:#b91450 ;
+    margin: 150px;
+    min-height: 500px;
+    vertical-align: middle;
+    color: white;
+    
+}
+
+.top,.bottom {
+    background-color: white;
+    padding: 0 150px;
+    min-height: 160px;
+    width: 60em;
+    margin: 2em auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+
+.top-up {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    
+}
+
+.MyButton,.delete{
+    background-color: lightgray;
+    color: #b91450;
+    border: solid 2px  #b91450;
+    border-radius: 5px;
+    width: 60px;
+}

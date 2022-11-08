@@ -20,24 +20,26 @@ myButton.addEventListener("click",
 
         const age = document.getElementById ("age").value;
         const distance = document.getElementById("distance").value;
-        let price = distance * 2;
+        let price = distance * 0.21;
         let totPrice;
     
         if (age < 18) {
             
-            totPrice = price - (price * 0.2) ;
-            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice + "€" ;
+            totPrice = price - (price * 0.2);
+            totPrice = totPrice.toFixed(2);
+            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice.toFixed(2) + "€" ;
         }
 
         else if (age > 64) {
         
-            totPrice = price - (price * 0.4) ;
-            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice + "€" ;
+            totPrice = price - (price * 0.4); 
+            
+            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice.toFixed(2) + "€" ;
         }
 
         else {
-        
-            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + price + "€" ;
+            totPrice = price;
+            document.getElementById("ticket").innerHTML= "il tuo biglietto costa " + totPrice.toFixed(2) + "€" ;
 
         }
 
